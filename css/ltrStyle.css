@@ -1,0 +1,481 @@
+
+@font-face {
+    font-family: 'songsFont';
+    font-style: normal;
+    font-weight: bold;
+    src: url("/font/font/fonts/eot/IRANSans\(FaNum\)_Medium.eot");
+     src: url('/font/font/fonts/eot/IRANSansWeb_FaNum_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+       url('/font/font/fonts/woff2/IRANSansWeb_FaNum_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+       url('/font/font/fonts/woff/IRANSansWeb_FaNum_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/font/font/fonts/ttf/IRANSansWeb_FaNum_Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'songsFont';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/font/font/fonts/eot/IRANSansWeb_FaNum_Medium.eot');
+    src: url('/font/font/fonts/eot/IRANSansWeb_FaNum_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+       url('/font/font/fonts/woff2/IRANSansWeb_FaNum_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+       url('/font/font/fonts/woff/IRANSansWeb_FaNum_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/font/font/fonts/ttf/IRANSansWeb_FaNum_Medium.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'songsFont';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/font/font/fonts/eot/IRANSansWeb_FaNum_Light.eot');
+    src: url('/font/font/fonts/eot/IRANSansWeb_FaNum_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+       url('/font/font/fonts/woff2/IRANSansWeb_FaNum_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+       url('/font/font/fonts/woff/IRANSansWeb_FaNum_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/font/font/fonts/ttf/IRANSansWeb_FaNum_Light.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'songsFont';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/font/font/fonts/eot/IRANSansWeb_FaNum_UltraLight.eot');
+    src: url('/font/font/fonts/eot/IRANSansWeb_FaNum_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+       url('/font/font/fonts/woff2/IRANSansWeb_FaNum_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+       url('/font/font/fonts/woff/IRANSansWeb_FaNum_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/font/font/fonts/ttf/IRANSansWeb_FaNum_UltraLight.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'songsFont';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/font/fonts/eot/IRANSansWeb_FaNum.eot');
+    src: url('/font/font/fonts/eot/IRANSansWeb_FaNum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+       url('/font/font/fonts/woff2/IRANSansWeb_FaNum.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+       url('/font/font/fonts/woff/IRANSansWeb_FaNum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('/font/font/fonts/ttf/IRANSansWeb_FaNum.ttf') format('truetype');
+  }
+
+  body{
+    font-family: 'Times New Roman' !important;
+    direction: ltr !important;
+
+  }
+  div{
+    text-align: left ;
+
+  }
+
+
+/* ------
+  header  
+------- */
+
+
+.fa-arrow-up{
+    cursor: pointer;
+    margin-left: -14px;
+}
+.navbar-brand:hover,
+.text-collapse:hover{
+    cursor: pointer;
+}
+
+.img-album{
+    width: 35px;
+    height:35px;
+    border-radius: 50%;
+}
+ 
+.section-collapse{
+    height:0 ;
+    width: 100%;
+    margin-bottom: 10px;
+    background-image: url('/img/leito-collapse1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-munu-mobile{
+ 
+    border-top-right-radius: 50px;
+    border-top-left-radius:  50px;
+    
+}
+
+.icon-menu-mobile
+,.fa-search{
+    color:rgb(170, 169, 169);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lan-icon{
+    color:rgb(170, 169, 169);
+    font-weight: bold;
+    position: relative;
+    animation-name: lan-icon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes lan-icon {
+      0%   { transform:rotate(0deg)}
+      100%   { transform:rotate(360deg)}
+      
+    }
+
+
+.search-icon-mobile-menu{
+    position: relative;
+    animation-name: saerch-icon;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes saerch-icon {
+      0%   { transform:rotate(0deg)}
+      50%   { transform:rotate(45deg)}
+      100% { transform:rotate(0deg)}
+    }
+
+
+.fa-arrow-down{
+    visibility: hidden;
+    transition: 0.1111s ease-in-out;
+    
+}
+
+.fa-globe-asia{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-lan{
+    background-color: rgba(49, 49, 49, 0.5) !important;
+}
+
+.progress-container {
+    width: 100%;
+    height: 3px;
+    background: #ccc;
+}
+  
+  .progress-bar {
+    height: 3px;
+    background: linear-gradient(#131313, #9198e5);
+    width: 0%;
+  }
+  
+  .content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  }
+
+.dropdown-item{
+    transform: scale(0.85);
+    transition: all 0.5s  ease-in-out;
+}
+.dropdown-item:hover{
+    background-color: #343a40 !important;
+    transform: scale(0.99);
+
+}
+
+.icon-navs{
+    color: #fc73b4;
+    background: linear-gradient(to bottom , #c2abdb 0% , #ce8aaa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+
+.img-leito-collapse{
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px  rgba(255, 255, 255, 0.226);
+}
+
+.icon-search-nav{
+    background-color: rgba(245, 245, 245, 0.24);
+    color: whitesmoke;
+    font-size: 20px;
+    border: 0.22px solid white;
+    border-radius: 7px;
+}
+
+.icon-search-nav:hover{
+    cursor: pointer;
+}
+
+
+@media(max-width:765px){
+    .search-input-navbar{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    .img-carousel{
+        height: 300px !important;
+    }
+    .text-bio{
+        font-size: 10px;
+        text-align: justify;
+        color: rgba(0, 0, 0, 0.719);
+    }
+    .img-bio{
+        padding: 2px;
+        margin-right: auto !important;
+    }
+    h3{
+
+       font-size: 20px !important;
+    }
+    .card-music p{
+        font-size: 13px;
+    }
+    .personal-img{
+        height: 312px;
+    }
+}
+
+.mymodal{
+
+    background-image: url("/img/leito-img-modal.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+}
+.modal-backdrop{
+    z-index: 999 !important;
+
+}
+
+/* -------
+    main
+-------- */
+
+.img-bio{
+    border: 0.3px solid black;
+    border-radius: 50%;
+    width:  80px ;
+    height: 80px ;
+    box-shadow: 3px 8px 15px 0 rgba(14, 13, 13, 0.274); 
+    margin-right: 20px;
+    
+}
+
+.text-bio{
+    text-align: justify;
+}
+
+.album-card{
+    transition: all 0.2s ease-in-out;
+
+}
+
+.album-card:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.owl-theme .owl-dots {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    background: #c0a6c7;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+    margin : 0 7px;
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot:hover {
+    background: #eb628b;    
+}
+
+.owl-theme .owl-dots .owl-dot.active {
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,0.07);       
+    background: #f12e69;  
+    padding: 3px;  
+}
+
+
+.img-gallery .owl-item {
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,0.07);       
+    transform: scale(0.8) !important;
+    transition: all 0.4s ease-in;
+    width: 600px;
+    height: 550px;
+    border-radius: 10px;
+    color: rgba(63, 62, 62, 0.466);
+    border-bottom: 4px solid rgba(30, 143, 255, 0.781);
+    
+}
+
+.img-gallery .owl-item.active.center {
+    transform: scale(1) !important;
+    z-index: 111;
+    color: black;
+    cursor: pointer;
+}
+
+
+.pointer-see-all small{
+    color: rgb(182, 182, 182);
+    transition: 0.3s ease-in-out all;
+    transform: scale(0.9);
+
+
+}
+.pointer-see-all:hover small,.pointer-see-all:hover{
+    transform: scale(1);
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 0.3s ease-in-out all;
+    text-decoration: none !important;
+
+}
+
+.pointer-see-all i{
+    width: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.pointer-see-all:hover i{
+    width: 10px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-music-video,
+.card-music{
+    transition: all 0.3s ease-in-out;
+
+}
+
+.card-music:hover,
+.card-music-video:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0.5px 3px 0 rgba(255, 255, 255, 0.589); 
+    z-index: 99;
+}
+
+.card-music-video:hover{
+    box-shadow: 0 1px 3px 0 rgba(20, 20, 20, 0.589); 
+
+
+}
+
+.img-songs{
+    border: 0.23px solid whitesmoke;
+}
+
+.pointer-see-all2 i{
+
+    width: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+}
+
+.pointer-see-all2:hover i{
+    width: 10px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.pointer-see-all2{
+    text-decoration: none !important;
+}
+
+.bg-gradient{
+    background-image: linear-gradient( 150deg , rgb(71, 71, 71) 0% , rgb(0, 0, 0) 100%);
+}
+
+.personal-img{
+    border-radius: 15px;
+    border: 0.7px solid rgba(255, 255, 255, 0.185);
+}
+
+/* ------
+ footer
+-------- */
+footer{
+    background-color: black;
+}
+
+.album-head{
+    color: orange;
+}
+
+.album-details-footer{
+    max-width: 150px;
+}
+
+.album-items{
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.album-items:hover{
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-bottom: .25px solid orange;
+    border-radius: 15px;
+}
+
+.card-bio-footer{
+    background-color: black;
+    max-width: 100px;
+}
+
+.section-share{
+    border-top: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    border-top-left-radius: 7rem;
+    padding: 15px;
+    height: auto;
+}
+
+.share-comment{
+    width: 450px;
+    padding: 20px;
+    height: 200px;
+}
+
+.fa-share-alt{
+
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(197, 197, 197, 0.144);
+    border-radius: 10px;
+    border: 0.75px solid rgba(65, 65, 65, 0.377);
+
+}
+
+.footer-share-icon{
+    margin: 5px;
+    background-color:rgba(255, 166, 0, 0.301);
+    padding: 10px;
+    border-radius: 50%;
+    border: 0.23px solid rgba(255, 255, 255, 0.274);
+    font-size: 20px;
+    color: whitesmoke;
+}
+    
+
+
+
+
+
+
+

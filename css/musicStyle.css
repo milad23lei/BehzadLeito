@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "font-header";
+  src: url(/font/musicFont1/Staatliches-Regular.ttf);
+}
+@font-face {
+  font-family: "font-body";
+  src: url(/font/musicFount2/Scada-Regular.ttf);
+}
+
+.section {
+  background-color: black;
+  text-align: left;
+  direction: ltr;
+}
+.section-title {
+  font-family: "font-header";
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.contant {
+  font-family: "font-body";
+  text-align: left;
+  direction: ltr;
+}
+
+.music-section p {
+  font-size: 18px;
+}
+.img-cover {
+  border: 0.5px solid white;
+}
+.item-container {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  font-family: "font-body";
+}
+.item-container:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.9);
+}
+.text-cover {
+  max-width: 210px;
+}
+@media (max-width: 765px) {
+  .text-cover {
+    max-width: 150px;
+  }
+}

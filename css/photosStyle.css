@@ -1,0 +1,34 @@
+@font-face {
+  src: url(/font/musicFont1/Lato-Regular.ttf);
+  font-family: "caption-image";
+}
+
+body {
+  background-color: black !important;
+}
+
+.lb-number {
+  font-family: "caption image" !important;
+}
+
+.personal-img {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.personal-img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #img-part2,
+  #img-part3 {
+    display: none;
+    transition: all 1s ease-in-out;
+  }
+  #btn-showPart3 {
+    display: none;
+  }
+}
